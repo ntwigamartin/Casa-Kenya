@@ -1,3 +1,20 @@
-h1{
-    color: blueviolet;
+.navBar {
+    display: flex;
+    background-color: rgb(150, 142, 142);
+    justify-content: space-between;
+    border: solid;
+    border-radius: 5px;
+    margin: auto;
+}
+
+h1 {
+    color: rgb(228, 226, 235);
+}
+
+form {
+    align-self: center;
+}
+
+.main-container {
+    display: flex;
 }

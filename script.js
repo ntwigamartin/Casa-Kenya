@@ -1,1 +1,4 @@
-console.log("hello");
+//load dom first
+document.addEventListener("DOMContentLoaded", (e)=>{
+
+})
