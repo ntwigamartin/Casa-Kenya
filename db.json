@@ -1,0 +1,49 @@
+{
+    "homes": [
+        {
+            "id":1,
+            "name":"Kibiku Heights",
+            "description":"mixed use commercial and 2 bedroom units",
+            "location":"Wangige",
+            "rent_amount":"ksh 35,000",
+            "available_units":"1",
+            "likes":5
+        },
+        {
+            "id":2,
+            "name":"Lency Apartments",
+            "description":"Excellent studio apartments",
+            "location":"Roysambu",
+            "rent_amount":"ksh 20,000",
+            "available_units":"None Currently",
+            "likes":5
+        },
+        {
+            "id":3,
+            "name":"Westlands View Apartments",
+            "description":"3 bedroom all ensuite and spacious",
+            "location":"Westlands",
+            "rent_amount":"ksh 80,000",
+            "available_units":"8",
+            "likes":5
+        },
+        {
+            "id":4,
+            "name":"Amani Villas",
+            "description":"5 bedroom all ensuites maisonette",
+            "location":"Runda",
+            "rent_amount":"ksh 100,000",
+            "available_units":"None Currently",
+            "likes":5
+        },
+        {
+            "id":5,
+            "name":"Lion Tower",
+            "description":"Spacious 3 bedroom all ensutes apartments",
+            "location":"Upperhill",
+            "rent_amount":"ksh 300,000",
+            "available_units":"17",
+            "likes":5
+        }
+    ]
+}
