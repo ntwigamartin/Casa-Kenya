@@ -17,4 +17,27 @@ form {
 
 .main-container {
     display: flex;
+    justify-content: space-around;
+}
+
+.homes-listing {
+    border: 1px #ccc solid;
+    height: 800px;
+    margin-top: 1em;
+    flex: 2;
+    border-radius: 3px;
+}
+
+.display-home-details {
+    border: 1px #ccc solid;
+    margin-top: 1em;
+    flex: 4;
+    border-radius: 3px;
+}
+
+.add-homes {
+    border: 1px #ccc solid;
+    margin-top: 1em;
+    flex: 2;
+    border-radius: 3px;
 }
