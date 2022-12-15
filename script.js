@@ -1,6 +1,7 @@
 //load dom first
 document.addEventListener("DOMContentLoaded", (e)=>{
     listHomes()
+    addHome()
 })
 
 //General utilities
@@ -13,6 +14,8 @@ const ul = document.createElement("ul")
 listDiv.appendChild(ul)
 const homesArray = "http://localhost:3000/homes"
 let p2 = document.createElement("p")
+const loginForm = document.getElementById("login")
+const addDetailsForm = document.getElementById("add-details")
 
 //Get homes
 function listHomes () {
@@ -33,7 +36,33 @@ function listHomes () {
                                 <h4>Available Units:</h4> ${home.available_units}`
                 
             })
-
+            
         });
+    })
+}
+
+//submit home details
+function addHome () {
+    addDetailsForm.addEventListener("submit", (e)=>{
+        e.preventDefault()
+        
+        let newName = e.target.propertyname.value
+        let p = document.createElement("p")
+        p.innerHTML = newName
+        ul.appendChild(p)
+
+        let description = e.target.description.value
+        let location = e.target.location.value
+        let rentamount = e.target.rentamount.value
+        let availableunits = e.target.availableunits.value
+        
+        p2.innerHTML = `<h4>Description:</h4> ${description}
+                        <h4>Location:</h4> ${location}
+                        <h4>Rent Amount:</h4> ${rentamount}
+                        <h4>Available Units:</h4> ${availableunits}`
+                                             
+        displayDiv.appendChild(p2)
+        addDetailsForm.reset()
+        
     })
 }

@@ -10,7 +10,7 @@
 <body>
     <nav class="navBar">
         <h1>Welcome to Casa Kenya</h1>
-        <form action="">
+        <form action="" id="login">
             <input type="email" placeholder="Email address">
             <input type="password" placeholder="password">
             <input type="submit" value="Login">
@@ -20,13 +20,14 @@
         <div class="homes-listing"></div>
         <div class="display-home-details"></div>
         <div class="add-homes">
-            <form action="">
+            <form action="" id="add-details">
                 <h3>You have a Rental Home? Add its details below;</h3>
-                <input type="text" placeholder="Description">
-                <input type="text" placeholder="Location">
-                <input type="text" placeholder="Rent Amount">
-                <input type="text" placeholder="Available Units">
-                <input type="submit">
+                <input type="text" placeholder="Property Name" id="propertyname">
+                <input type="text" placeholder="Description" id="description">
+                <input type="text" placeholder="Location" id="location">
+                <input type="text" placeholder="Rent Amount" id="rentamount">
+                <input type="text" placeholder="Available Units" id="availableunits">
+                <input type="submit" id="submit">
             </form>
         </div>
     </div>
