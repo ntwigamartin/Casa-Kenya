@@ -12,6 +12,7 @@ const addHomeDiv = document.querySelector(".add-homes")
 const ul = document.createElement("ul")
 listDiv.appendChild(ul)
 const homesArray = "http://localhost:3000/homes"
+let p2 = document.createElement("p")
 
 //Get homes
 function listHomes () {
@@ -23,6 +24,15 @@ function listHomes () {
             let p = document.createElement("p")
             p.innerHTML = home.name
             ul.appendChild(p)
+            
+            p.addEventListener(("click"), (e)=>{
+                displayDiv.appendChild(p2)
+                p2.innerHTML = `<h4>Description:</h4> ${home.description} 
+                                <h4>Location:</h4> ${home.location} 
+                                <h4>Rent Amount:</h4> ${home.rent_amount} 
+                                <h4>Available Units:</h4> ${home.available_units}`
+                
+            })
 
         });
     })
