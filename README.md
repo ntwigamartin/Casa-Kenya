@@ -3,13 +3,15 @@
 ## Description
 Casa Kenya is a platform where property owners can advertise there properties and potential tenants can browse through the various properties to find a suitable property to rent.
 
-
-## Requirements
+## Using the Web App
+The app can be accessed online by opening this link on your browser.<br>
+Alternatively, the same can be accessed locally as per below instructions;
+### Requirements
 * Text editor e,g Vs code
 * Browser e.g Chrome
 * json-Server
 
-## Installation
+### Installation
 * Clone the app to your local repository using the following;
 
         git@github.com:ntwigamartin/Casa-Kenya.git
@@ -20,3 +22,9 @@ Casa Kenya is a platform where property owners can advertise there properties an
 * On vs code terminal, run the following command to get the backend started:
 
         json-server --watch db.json
+### Running the App Locally
+* Open the index.html file with your browser e.g Chrome
+
+## License
+ISC License <br>
+Copyright (c) 2022 Martin Ntwiga
