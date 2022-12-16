@@ -4,7 +4,7 @@
 Casa Kenya is a platform where property owners can advertise there properties and potential tenants can browse through the various properties to find a suitable property to rent.
 
 ## Using the Web App
-The app can be accessed online by opening this link on your browser.<br>
+The app can be accessed online by opening this [link](https://ntwigamartin.github.io/Casa-Kenya/) on your browser.<br>
 Alternatively, the same can be accessed locally as per below instructions;
 ### Requirements
 * Text editor e,g Vs code
