@@ -19,7 +19,10 @@ const addDetailsForm = document.getElementById("add-details")
 
 //Login alert
 function loginAlert () {
-     
+     loginForm.addEventListener("submit", (e)=>{
+        e.preventDefault()
+        loginForm.reset()
+     })
 }
 
 //Get homes
