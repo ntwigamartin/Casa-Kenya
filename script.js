@@ -1,5 +1,6 @@
 //load dom first
 document.addEventListener("DOMContentLoaded", (e)=>{
+    loginAlert()
     listHomes()
     addHome()
 })
@@ -21,6 +22,9 @@ const addDetailsForm = document.getElementById("add-details")
 function loginAlert () {
      loginForm.addEventListener("submit", (e)=>{
         e.preventDefault()
+        let userDetails = e.target.user_email.value
+        alert("Login successful")
+
         loginForm.reset()
      })
 }
@@ -54,20 +58,20 @@ function addHome () {
     addDetailsForm.addEventListener("submit", (e)=>{
         e.preventDefault()
         
-        let newName = e.target.propertyname.value
+        let newName = e.target.property_name.value
         let p = document.createElement("p")
         p.innerHTML = newName
         ul.appendChild(p)
 
         let description = e.target.description.value
         let location = e.target.location.value
-        let rentamount = e.target.rentamount.value
-        let availableunits = e.target.availableunits.value
+        let rentAmount = e.target.rent_amount.value
+        let availableUnits = e.target.available_units.value
         
         p2.innerHTML = `<h4>Description:</h4> ${description}
                         <h4>Location:</h4> ${location}
-                        <h4>Rent Amount:</h4> ${rentamount}
-                        <h4>Available Units:</h4> ${availableunits}`
+                        <h4>Rent Amount:</h4> ${rentAmount}
+                        <h4>Available Units:</h4> ${availableUnits}`
                                              
         displayDiv.appendChild(p2)
         addDetailsForm.reset()
