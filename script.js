@@ -11,8 +11,10 @@ const mainDiv = document.querySelector(".main-container")
 const listDiv = document.querySelector(".homes-listing")
 const displayDiv = document.querySelector(".display-home-details")
 const addHomeDiv = document.querySelector(".add-homes")
+
 const ul = document.createElement("ul")
 listDiv.appendChild(ul)
+
 const homesArray = "https://ntwigamartin.github.io/Casa-Kenya-data/db.json"
 let p2 = document.createElement("p")
 const loginForm = document.getElementById("login")
@@ -36,11 +38,11 @@ function listHomes () {
     .then(data=>{
         console.log(data);
         data.homes.forEach(home => {
-            let p = document.createElement("p")
-            p.innerHTML = home.name
-            ul.appendChild(p)
+            let li = document.createElement("p")
+            li.innerHTML = home.name
+            ul.appendChild(li)
             
-            p.addEventListener(("click"), (e)=>{
+            li.addEventListener(("click"), (e)=>{
                 displayDiv.appendChild(p2)
                 p2.innerHTML = `<h4>Description:</h4> ${home.description} 
                                 <h4>Location:</h4> ${home.location} 
