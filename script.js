@@ -31,6 +31,7 @@ function loginAlert () {
      })
 }
 
+
 //Get homes
 function listHomes () {
     fetch(homesArray)
@@ -41,7 +42,7 @@ function listHomes () {
             let li = document.createElement("p")
             li.innerHTML = home.name
             ul.appendChild(li)
-            
+
             li.addEventListener(("click"), (e)=>{
                 displayDiv.appendChild(p2)
                 p2.innerHTML = `<h4>Description:</h4> ${home.description} 

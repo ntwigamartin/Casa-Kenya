@@ -29,12 +29,13 @@ h1 {
 .display-home-details {
     border: 1px #ccc solid;
     margin-top: 1em;
-    flex: 4;
+    flex: 5;
     border-radius: 3px;
     margin-left: 10px;
-    margin-right: 80px;
+    margin-right: 10px;
     display: flex;
     justify-content: center;
+    background-image: url(./images/apartment_rent.svg);
     
 }
 
