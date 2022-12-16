@@ -45,7 +45,8 @@ function listHomes () {
                 p2.innerHTML = `<h4>Description:</h4> ${home.description} 
                                 <h4>Location:</h4> ${home.location} 
                                 <h4>Rent Amount:</h4> ${home.rent_amount} 
-                                <h4>Available Units:</h4> ${home.available_units}`
+                                <h4>Available Units:</h4> ${home.available_units}
+                                <h4>Contacts:</h4> ${home.contacts}`
                 
             })
             

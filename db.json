@@ -7,7 +7,7 @@
             "location":"Wangige",
             "rent_amount":"Ksh 35,000",
             "available_units":"1",
-            "Contacts":"700,045,001",
+            "contacts":"700-045-001",
             "likes":5
         },
         {
@@ -17,7 +17,7 @@
             "location":"Roysambu",
             "rent_amount":"Ksh 20,000",
             "available_units":"None Currently",
-            "Contacts":"700,045,002",
+            "contacts":"700-045-002",
             "likes":5
         },
         {
@@ -27,7 +27,7 @@
             "location":"Westlands",
             "rent_amount":"Ksh 80,000",
             "available_units":"8",
-            "Contacts":"700,045,003",
+            "contacts":"700-045-003",
             "likes":5
         },
         {
@@ -37,7 +37,7 @@
             "location":"Runda",
             "rent_amount":"ksh 100,000",
             "available_units":"None Currently",
-            "Contacts":"700,045,004",
+            "contacts":"700-045-004",
             "likes":5
         },
         {
@@ -47,7 +47,7 @@
             "location":"Upperhill",
             "rent_amount":"Ksh 300,000",
             "available_units":"17",
-            "Contacts":"700,045,005",
+            "contacts":"700-045-005",
             "likes":5
         }
     ]
