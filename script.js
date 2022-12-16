@@ -17,6 +17,11 @@ let p2 = document.createElement("p")
 const loginForm = document.getElementById("login")
 const addDetailsForm = document.getElementById("add-details")
 
+//Login alert
+function loginAlert () {
+     
+}
+
 //Get homes
 function listHomes () {
     fetch(homesArray)
