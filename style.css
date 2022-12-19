@@ -21,7 +21,7 @@ h1 {
 
 .homes-listing {
     border: 1px #ccc solid;
-    height: 880px;
+    height: 875px;
     margin-top: 1em;
     flex: 2;
     border-radius: 3px;
@@ -36,7 +36,7 @@ h1 {
     margin-right: 10px;
     display: flex;
     justify-content: center;
-    background-image: url(./images/apartment_rent.svg);
+    background-image: url(./images/house_searching.svg);
     background-repeat: no-repeat;
     background-position: bottom;
     
@@ -48,5 +48,9 @@ h1 {
     flex: 2;
     border-radius: 3px;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: center;
+    
+    
 }

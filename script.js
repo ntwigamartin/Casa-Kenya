@@ -3,6 +3,7 @@ document.addEventListener("DOMContentLoaded", (e)=>{
     loginAlert()
     listHomes()
     addHome()
+    displayComments()
 })
 
 //General utilities
@@ -44,11 +45,11 @@ function listHomes () {
 
             li.addEventListener(("click"), (e)=>{
                 displayDiv.appendChild(p2)
-                p2.innerHTML = `<h4>Description:</h4> ${home.description} 
-                                <h4>Location:</h4> ${home.location} 
-                                <h4>Rent Amount:</h4> ${home.rent_amount} 
-                                <h4>Available Units:</h4> ${home.available_units}
-                                <h4>Contacts:</h4> ${home.contacts} <br><br>
+                p2.innerHTML = `<p>Description:${home.description}</p>  
+                                <p>Location: ${home.location}</p>  
+                                <p>Rent Amount: ${home.rent_amount}</p>  
+                                <p>Available Units: ${home.available_units}</p> 
+                                <p>Contacts: ${home.contacts}</p>  <br>
                                 <button>Likes:${home.likes}</button>`
 
 
@@ -79,14 +80,30 @@ function addHome () {
         let availableUnits = e.target.available_units.value
         let contacts = e.target.contacts.value
         
-        p2.innerHTML = `<h4>Description:</h4> ${description}
-                        <h4>Location:</h4> ${location}
-                        <h4>Rent Amount:</h4> ${rentAmount}
-                        <h4>Available Units:</h4> ${availableUnits}
-                        <h4>Contacts:</h4> ${contacts}`
+        p2.innerHTML = `<p>Description:${description}</p> 
+                        <p>Location:${location}</p> 
+                        <p>Rent Amount:${rentAmount}</p> 
+                        <p>Available Units:${availableUnits}</p> 
+                        <p>Contacts:${contacts}</p> `
                                              
         displayDiv.appendChild(p2)
         addDetailsForm.reset()
         
+    })
+}
+
+
+//Comments
+function displayComments () {
+    const commentsForm = document.getElementById("comments")
+    let divComment = document.querySelector(".display_comments")
+    commentsForm.addEventListener("submit", (e)=>{
+        e.preventDefault()
+        let comments = e.target.comments_area.value
+        let p = document.createElement("p")
+        p.innerHTML = comments
+        divComment.appendChild(p)
+
+        commentsForm.reset()
     })
 }
