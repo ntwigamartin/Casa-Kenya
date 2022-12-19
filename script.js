@@ -37,7 +37,6 @@ function listHomes () {
     fetch(homesArray)
     .then(res=>res.json())
     .then(data=>{
-        console.log(data);
         data.homes.forEach(home => {
             let li = document.createElement("p")
             li.innerHTML = home.name
@@ -49,15 +48,16 @@ function listHomes () {
                                 <h4>Location:</h4> ${home.location} 
                                 <h4>Rent Amount:</h4> ${home.rent_amount} 
                                 <h4>Available Units:</h4> ${home.available_units}
-                                <h4>Contacts:</h4> ${home.contacts}`
-                
+                                <h4>Contacts:</h4> ${home.contacts} <br><br>
+                                <button>Likes:${home.likes}</button>`
+
             })
             
         });
     })
 }
 
-//submit home details
+//submit new home details
 function addHome () {
     addDetailsForm.addEventListener("submit", (e)=>{
         e.preventDefault()

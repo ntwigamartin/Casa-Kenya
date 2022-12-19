@@ -16,11 +16,12 @@ h1 {
 .main-container {
     display: flex;
     justify-content: space-around;
+    
 }
 
 .homes-listing {
     border: 1px #ccc solid;
-    height: 850px;
+    height: 880px;
     margin-top: 1em;
     flex: 2;
     border-radius: 3px;
