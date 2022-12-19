@@ -77,11 +77,13 @@ function addHome () {
         let location = e.target.location.value
         let rentAmount = e.target.rent_amount.value
         let availableUnits = e.target.available_units.value
+        let contacts = e.target.contacts.value
         
         p2.innerHTML = `<h4>Description:</h4> ${description}
                         <h4>Location:</h4> ${location}
                         <h4>Rent Amount:</h4> ${rentAmount}
-                        <h4>Available Units:</h4> ${availableUnits}`
+                        <h4>Available Units:</h4> ${availableUnits}
+                        <h4>Contacts:</h4> ${contacts}`
                                              
         displayDiv.appendChild(p2)
         addDetailsForm.reset()
