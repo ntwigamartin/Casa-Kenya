@@ -25,9 +25,10 @@ const addDetailsForm = document.getElementById("add-details")
 function loginAlert () {
      loginForm.addEventListener("submit", (e)=>{
         e.preventDefault()
-        let userDetails = e.target.user_email.value
+        //let userDetails = e.target.user_email.value
+        addDetailsForm.style.display = 'block';
         alert("Login successful")
-
+        
         loginForm.reset()
      })
 }
