@@ -51,6 +51,12 @@ function listHomes () {
                                 <h4>Contacts:</h4> ${home.contacts} <br><br>
                                 <button>Likes:${home.likes}</button>`
 
+
+                let btn = document.querySelector("button")
+                btn.addEventListener(("click"), (e)=>{
+                    btn.innerHTML = `Likes:${home.likes}`
+                    home.likes++
+                })
             })
             
         });
