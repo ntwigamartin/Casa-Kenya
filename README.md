@@ -5,7 +5,7 @@ Casa Kenya is a platform where property owners can advertise there properties an
 
 ## Using the Web App
 The app can be accessed online by opening this [link](https://ntwigamartin.github.io/Casa-Kenya/) on your browser.<br>
-Add home functionality is available only after login. However login authentication is not yet enabled for this version.<br><br>
+On the web page, user is only allowed to add a new home details after login. <br> However, login authentication is not yet enabled for this version, so no sign up <br> and any email and password will get you logged in.<br><br>
 Alternatively, the app can be accessed locally as per below instructions;
 ### Requirements
 * Text editor e,g Vs code
