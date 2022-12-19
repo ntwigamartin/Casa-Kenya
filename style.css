@@ -37,6 +37,8 @@ h1 {
     display: flex;
     justify-content: center;
     background-image: url(./images/apartment_rent.svg);
+    background-repeat: no-repeat;
+    background-position: bottom;
     
 }
 
